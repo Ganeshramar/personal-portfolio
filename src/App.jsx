@@ -253,11 +253,21 @@ export default function Portfolio() {
       {/* NAV */}
       <nav>
         <div className="logo">&lt;<span>DEV</span>/&gt;</div>
+        <div className="nav-right">
         <ul className="nav-links">
           {["About", "Skills", "Projects", "Experience", "Contact"].map(s => (
             <li key={s}><a href={`#${s.toLowerCase()}`}>{s}</a></li>
           ))}
         </ul>
+
+        {/* 📄 Resume Download */}
+        <div className="nav-links">
+          <a href='./assets/resume.pdf' download="Ganesh_Ramar_Resume.pdf" className="btn-resume">
+            ↓ Resume
+          </a>
+
+        </div>
+        </div>
       </nav>
 
       {/* HERO */}
